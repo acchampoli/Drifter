@@ -380,30 +380,53 @@ span {
 
 /*About Me Page*/
 .aboutMe {
-  width: 1300px;
-  height: auto;
-  overflow-y: scroll;
+  width: 1500px;
+  height: 1000px;
   position: relative;
-  display: flex;
-  justify-content: center;
-  font-family: "Noto Serif TC", serif;
-  font-size: 20px;
-  line-height: 2.2em;
-  color: black;
-  text-align: justify;
-  margin-left: 150px;
-  margin-top: 50px;
-  float: left;
+  display: block;
+
 }
 
-.textWrap::first-letter {
-  font-size: 40px;
+.textWrap1::first-letter {
+  font-size: 46px;
 }
 
+
+.textWrap1, .textWrap2 {
+  width: 1000px;
+    font-family: "Noto Serif TC", serif;
+    font-size: 16px;
+    line-height: 2.0em;
+    color: black;
+    text-align: justify;
+    margin: 50px 0px -70px 150px;
+    float: left;
+}
+.textWrap2::first-letter {
+  font-size: 46px;
+}
+
+#emailOnInfo {
+  color: #ff6666;
+  text-decoration: none;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+  padding-left: 10px;
+  transition: 1s ease-in;
+}
+
+#emailOnInfo:hover {
+  color: turquoise;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+}
 #selfie {
   float: right;
-  width: 300px;
-  height: 400px;
+  max-width: 400px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
   object-fit: cover;
   padding: 0px 0px 0px 0px;
   margin-left: 50px;
