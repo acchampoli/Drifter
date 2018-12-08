@@ -1,0 +1,424 @@
+/* drifter_retouch.css */
+html {
+  width: 1500px;
+  height: 700px;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas: "span hd hd"
+    "span nav main";
+}
+
+#main {
+  position: relative;
+  padding: 10px;
+  transition: .5s;
+}
+
+body {
+  position: relative;
+  top: 100px;
+  width: 1500px;
+}
+
+.content {
+  padding: 0;
+  grid-area: main;
+}
+
+/* Banner */
+.banner {
+  z-index: 1;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+  float: left;
+  padding: 0px;
+  border: 1px solid transparent;
+  border-radius: 1px;
+  background-color: black;
+  vertical-align: top;
+  align-items: flex-end;
+  flex-flow: nowrap row;
+  grid-area: hd;
+}
+
+h2 {
+  justify-content: space-between;
+}
+
+.name a {
+  position: relative;
+  left: 100px;
+  width: 500px;
+  float: left;
+  color: white;
+  text-align: left;
+  align-self: center;
+  font-family: "Montserrat",
+    sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: -2px;
+  transition: all linear 0.5s;
+}
+
+.name a:hover {
+  color: #ff6666;
+  overflow: none;
+  font-size: 40px;
+  letter-spacing: -1px;
+  /**
+  * text stroke animation -webkit-text-stroke: .1px #fff2e6;
+  * -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  */
+}
+
+a {
+  color: #fff2e6;
+  text-decoration: none;
+}
+
+ul {
+  display: block;
+  position: absolute;
+  bottom: 250px;
+  padding-left: 50px;
+  color: #ffffff;
+  font-family: "Montserrat",
+    sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2em;
+  letter-spacing: -1px;
+  list-style: none;
+}
+
+li:first-child {
+  font-size: 18px;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+#blog,
+#linkedin {
+  display: inline-block;
+  right: -750px;
+  width: 100px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  text-transform: lowercase;
+  font-family: "Oxygen",
+    sans-serif;
+  font-size: 22px;
+}
+
+.rightlinks {
+  position: relative;
+}
+
+.rightlinks a:hover {
+  color: maroon;
+}
+
+/* Nav */
+span {
+  z-index: 2;
+  position: fixed;
+  top: 102px;
+  left: 0px;
+  width: 80px;
+  height: 100%;
+  border: 1px solid #ff6666;
+  background: #ff6666;
+  box-shadow: 0px 1px 5px lightgray;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 50px;
+  line-height: 750px;
+}
+
+.sidenav {
+  z-index: 7;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 0;
+  height: 100%;
+  padding-top: 50px;
+  overflow-x: hidden;
+  background-color: black;
+  grid-area: nav;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  display: block;
+  padding-left: 50px;
+  color: #ff6666;
+  text-decoration: none;
+  font-family: "Oxygen",
+    sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 2em;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+  transition: all ease-in-out 1s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+/* Slideshow */
+.myRetouchSlideshow {
+  display: flex;
+  position: relative;
+  top: 0px;
+  left: 75px;
+  width: 1500px;
+  height: 700px;
+  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+img {
+  width: auto;
+  min-width: 400px;
+  max-width: 600px;
+  height: auto;
+  min-height: 400px;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.retouchText {
+  z-index: 2;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  width: 600px;
+  height: 25px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-family: "Oxygen",
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.retouchSingleImage {
+  position: relative;
+  padding: 0 10px 0 10px;
+}
+
+#tablet {
+  width: 450px;
+}
+
+/* Credits */
+#credits {
+  position: absolute;
+  bottom: 150px;
+  padding-left: 50px;
+  color: gray;
+  text-align: justify;
+  font-family: "Oxygen",
+    sans-serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* Mobile */
+@media only screen and (max-width : 600px) {
+  body {
+    width: auto;
+    max-width: 600px;
+  }
+
+  .wrapper {
+    display: flex;
+  }
+
+  .content {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Banner Name and Links Section */
+  .banner {
+    width: auto;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .rightlinks {
+    display: none;
+  }
+
+  #blog,
+  #linkedin {
+    display: none;
+  }
+
+  .name a {
+    left: 65px;
+    color: white;
+    background-color: transparent;
+    text-align: left;
+    font-family: "Montserrat",
+      sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: .5em;
+    letter-spacing: 2px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* Mobile Nav */
+  span {
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ff6666;
+    background: #ff6666;
+    box-shadow: 0px 1px 5px black;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.5em;
+  }
+
+  .sidenav {
+    z-index: 7;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    width: 0;
+    height: 100%;
+    margin: 0;
+    padding-top: 10px;
+    background-color: black;
+  }
+
+  .sidenav a {
+    display: block;
+    padding-top: 10px;
+    padding-left: 50px;
+    color: #ff6666;
+    text-decoration: none;
+    font-family: "Oxygen",
+      sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 2em;
+    transition: 0.3s;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    margin-left: 50px;
+    font-size: 16px;
+  }
+
+  /* Mobile Slideshow */
+  .myRetouchSlideshow {
+    display: block;
+    position: fixed;
+    top: 50px;
+    width: 400px;
+    height: 100%;
+    margin: 0 auto;
+    overflow-y: visible;
+  }
+
+  img {
+    width: auto;
+    max-width: 400px;
+    padding: 0px;
+    object-fit: contain;
+  }
+
+  .retouchText:not(#tablet) {
+    z-index: 2;
+    position: relative;
+    top: -50px;
+    left: 10px;
+    width: 400px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: transparent;
+    text-align: center;
+    font-family: "Oxygen",
+      sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.5em;
+  }
+
+  #tablet {
+    z-index: 2;
+    position: relative;
+    width: 400px;
+    width: 400px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    color: black;
+    color: black;
+    background-color: transparent;
+    background-color: transparent;
+    text-align: center;
+    font-family: "Oxygen",
+      sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.5em;
+  }
+
+  /* Mobile Credits */
+  #credits {
+    display: hidden;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: auto;
+    min-width: 400px;
+    max-width: 786px;
+    height: 25px;
+    margin: 4px;
+    color: transparent;
+  }
+}

@@ -1,0 +1,49 @@
+/*drifter_landing_style.css*/
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.bg {
+  background-image: linear-gradient(360deg, rgba(0,0,0,0.9), rgba(0,0,0,0.6), rgba(0,0,0,0)),  url('http://i67.tinypic.com/2ufafkx.jpg');
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.enter {
+  position: fixed;
+  bottom: 100px;
+  font-family: 'Questrial', sans-serif;
+  font-size: 48px;
+  line-height: 1.5em;
+  text-align: center;
+  width: 200px;
+  height: 70px;
+  text-decoration: none;
+  color: white;
+  border: 5px solid white;
+  border-radius: 5px;
+  opacity: 0.4;
+  transition: 1s ease-in;
+  text-transform: lowercase;
+}
+
+.enter:hover {
+  opacity: 0.8;
+  box-shadow: 0px 0px 15px 2px white;
+  background: black;
+}

@@ -1,0 +1,78 @@
+<!-- */DOCTYPE!html/* */Drifter/* -->
+<html>
+<header>
+  <link href="drifter_style.css" type="text/css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Noto+Serif+TC|Oxygen" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</header>
+
+<body>
+  <div class="wrapper">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="Drifter_Insanity.html">Insanity</a>
+      <a href="Drifter_Face.html">Face</a>
+      <a href="Drifter_Mind.html">Mind Over Matter</a>
+      <a href="Drifter_Retouch.html">Other Work</a>
+      <a href="Drifter_Info.html">Info</a>
+      <ul>
+        <li>Contact</li>
+        <li>&#9993; acchampoli@gmail.com</li>
+      </ul>
+      <h3 id="credits">Designed by Alexandra Champoli</h3>
+    </div>
+    <div id="main">
+      <div class="banner">
+        <h1 class="name"><a href="www.alexandrachampoli.com/home">Alexandra Champoli</a></h1>
+        <h2 class="rightlinks" id="linkedin"><a href="https://www.linkedin.com/in/alexandra-champoli/">LinkedIn</a></h2>
+        <h2 class="rightlinks" id="blog"><a href="www.alexandrachampoli.com/blog">Blog</a></h2>
+      </div>
+      <div class="content">
+        <div class="image1">
+          <a href="http://www.alexandrachampoli.com/insanity" id="insanity"><img src="http://i68.tinypic.com/ndp1k.jpg" alt="creep"></a>
+          <div class="captionOverlay" id="overlay1">
+            <div class="captionText">Insanity</div>
+          </div>
+        </div>
+        <div class="image2">
+          <a href="http://www.alexandrachampoli.com/face" id="face"><img src="http://i67.tinypic.com/2hmh36d.jpg" alt="face"></a>
+          <div class="captionOverlay" id="overlay2">
+            <div class="captionText">Portraits</div>
+          </div>
+        </div>
+        <div class="image3">
+          <a href="http://www.alexandrachampoli.com/personal" id="personal"><img src="http://i63.tinypic.com/2iqi91s.jpg" alt="personal"></a>
+          <div class="captionOverlay" id="overlay3">
+            <div class="captionText">Mind Over<br>Matter</div>
+          </div>
+        </div>
+        <div class="image4">
+          <a href="http://www.alexandrachampoli.com/retouchportfolio" id="retouchlink"><img src="http://i66.tinypic.com/qzlmk9.gif"></a>
+          <div class="captionOverlay" id="overlay4">
+            <div class="captionText">Retouch<br>Portfolio</div>
+          </div>
+        </div>
+        <div class="stringOne"></div>
+        <div class="stringTwo"></div>
+        <div class="stringThree"></div>
+        <div class="stringFour"></div>
+        <span onclick="openNav()"> &#10097;</span>
+
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+          }
+        </script>
+
+
+        <footer>
+        </footer>
+      </div>
+</body>
