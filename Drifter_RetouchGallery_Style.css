@@ -189,6 +189,10 @@ span {
   font-size: 25px;
 }
 
+a.otherworks {
+  display:none;
+}
+
 /* Slideshow */
 .myRetouchSlideshow {
   display: flex;
