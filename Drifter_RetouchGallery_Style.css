@@ -356,9 +356,9 @@ img {
     margin-left: 50px;
     font-size: 16px;
   }
-  a.otherworks {
-    display:none;
-  }
+a.otherworks {
+  display:none;
+}
   /* Mobile Slideshow */
   .myRetouchSlideshow {
     display: block;
