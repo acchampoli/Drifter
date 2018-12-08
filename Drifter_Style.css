@@ -381,6 +381,8 @@ span {
 /*About Me Page*/
 .aboutMe {
   width: 1300px;
+  height: auto;
+  overflow-y: scroll;
   position: relative;
   display: flex;
   justify-content: center;
