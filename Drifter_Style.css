@@ -640,6 +640,10 @@ a.otherworks {
     font-size: 16px;
   }
 
+  .otherworks {
+    display:none;
+  }
+
   /*Mobile Gallery Layout*/
   .insanityGallery {
     height: 500px;
