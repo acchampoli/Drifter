@@ -197,6 +197,7 @@ span {
   left: 75px;
   width: 1500px;
   height: 700px;
+  overflow-x: scroll;
   align-items: center;
   flex-flow: row nowrap;
   justify-content: flex-start;
