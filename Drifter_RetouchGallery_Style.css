@@ -257,7 +257,7 @@ img {
 }
 
 /* Mobile */
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 800px) {
   body {
     width: auto;
     max-width: 600px;
@@ -356,7 +356,7 @@ img {
     margin-left: 50px;
     font-size: 16px;
   }
-  .otherworks {
+  a.otherworks {
     display:none;
   }
   /* Mobile Slideshow */
