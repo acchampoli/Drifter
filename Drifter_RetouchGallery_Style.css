@@ -190,56 +190,62 @@ span {
 }
 
 a.otherworks {
-  display:none;
+  display: none;
 }
 
 /* Slideshow */
-.myRetouchSlideshow {
-  display: flex;
-  position: relative;
-  top: 0px;
-  left: 75px;
-  width: 1500px;
-  height: 700px;
+.retouchContainer {
+  height: 800px;
   overflow-x: scroll;
-  align-items: center;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
+  overflow-y: scroll;
+  width: 1800px;
 }
 
-img {
-  width: auto;
-  min-width: 400px;
-  max-width: 600px;
-  height: auto;
-  min-height: 400px;
+.retouchAlign {
+  display: block;
+}
+
+.myRetouchSlides {
   max-height: 600px;
-  object-fit: cover;
-}
-
-.retouchText {
-  z-index: 2;
-  position: absolute;
-  bottom: 0px;
-  left: 10px;
-  width: 600px;
-  height: 25px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  font-family: "Oxygen",
-    sans-serif;
-  font-size: 16px;
-  line-height: 1.5em;
-}
-
-.retouchSingleImage {
+  height: auto;
+  max-width: 600px;
+  width: auto;
+  object-fit: contain;
   position: relative;
-  padding: 0 10px 0 10px;
+  top: 0;
+  left: 0;
+}
+
+.myRetouchSlides, p {
+  top: 75px;
+  left: 25%;
+  font-family: "Noto Serif TC", sans-serif;
+  font-size: 14px;
+  position: relative;
+  font-style: italic;
+}
+
+p {
+  text-align: center;
+  width: 650px;
+}
+
+#tablet+p {
+  top: 75px;
+  left: 25%;
+  font-family: "Noto Serif TC", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  color: black;
+  position: relative;
 }
 
 #tablet {
-  width: 450px;
+  max-height: 800px;
+  height: auto;
+  max-width: 600px;
+  width: auto;
+  object-fit: contain;
 }
 
 /* Credits */
@@ -256,11 +262,179 @@ img {
   text-align: center;
 }
 
-/* Mobile */
+/* Mobile Horizontal*/
 @media only screen and (max-width : 800px) {
   body {
     width: auto;
     max-width: 600px;
+  }
+
+  .wrapper {
+    display: flex;
+  }
+
+  .content {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Banner Name and Links Section */
+  .banner {
+    width: 600px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .rightlinks {
+    display: none;
+  }
+
+  #blog,
+  #linkedin {
+    display: none;
+  }
+
+  .name a {
+    left: 65px;
+    color: white;
+    background-color: transparent;
+    text-align: left;
+    font-family: "Montserrat",
+      sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: .5em;
+    letter-spacing: 2px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* Mobile Nav */
+  span {
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ff6666;
+    background: #ff6666;
+    box-shadow: 0px 1px 5px black;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.5em;
+  }
+
+  .sidenav {
+    z-index: 7;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    width: 0;
+    height: 100%;
+    margin: 0;
+    padding-top: 10px;
+    background-color: black;
+  }
+
+  .sidenav a {
+    display: block;
+    padding-top: 10px;
+    padding-left: 50px;
+    color: #ff6666;
+    text-decoration: none;
+    font-family: "Oxygen",
+      sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 2em;
+    transition: 0.3s;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    margin-left: 50px;
+    font-size: 16px;
+  }
+
+  a.otherworks {
+    display: none;
+  }
+
+  /* Mobile Slideshow */
+  .retouchContainer {
+    height: 600px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    width: 800px;
+  }
+
+  .retouchAlign {
+    display: block;
+  }
+
+  .myRetouchSlides {
+    max-width: 600px;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .myRetouchSlides, p {
+    top: 5px;
+    left: 5%;
+    font-family: "Noto Serif TC", sans-serif;
+    font-size: 14px;
+    position: relative;
+    font-style: italic;
+  }
+
+  p {
+    text-align: center;
+    width: 600px;
+  }
+
+  #tablet+p {
+    position: relative;
+    top: 5px;
+    left: 5%;
+  }
+
+  #tablet {
+    width: 600px;
+    height: 900px;
+    object-fit: contain;
+    top: 0px;
+    left: 5%;
+  }
+
+  /* Mobile Credits */
+  #credits {
+    display: hidden;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: auto;
+    min-width: 400px;
+    max-width: 786px;
+    height: 25px;
+    margin: 4px;
+    color: transparent;
+  }
+}
+
+/* Mobile Vertical*/
+@media only screen and (max-width : 500px) {
+  body {
+    width: auto;
+    max-width: 500px;
   }
 
   .wrapper {
@@ -356,64 +530,51 @@ img {
     margin-left: 50px;
     font-size: 16px;
   }
-a.otherworks {
-  display:none;
-}
+
+  a.otherworks {
+    display: none;
+  }
+
   /* Mobile Slideshow */
-  .myRetouchSlideshow {
+  .retouchContainer {
+    height: 700px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    width: 400px;
+  }
+
+  .retouchAlign {
     display: block;
-    position: fixed;
-    top: 50px;
-    width: 400px;
-    height: 100%;
-    margin: 0 auto;
-    overflow-y: visible;
   }
 
-  img {
-    width: auto;
-    max-width: 400px;
-    padding: 0px;
-    object-fit: contain;
-  }
-
-  .retouchText:not(#tablet) {
-    z-index: 2;
+  .myRetouchSlides {
+    max-width: 350px;
+    height: auto;
     position: relative;
-    top: -50px;
-    left: 10px;
-    width: 400px;
-    height: 50px;
-    margin: 0;
-    padding: 0;
-    color: black;
-    background-color: transparent;
-    text-align: center;
-    font-family: "Oxygen",
-      sans-serif;
-    font-size: 12px;
+    top: 0;
+    left: 0;
+  }
+
+  .myRetouchSlides, p {
+    top: 5px;
+    left: 5%;
+    font-family: "Noto Serif TC", sans-serif;
+    font-size: 14px;
+    position: relative;
     font-style: italic;
-    line-height: 1.5em;
+  }
+
+  p {
+    text-align: center;
+    width: 350px;
   }
 
   #tablet {
-    z-index: 2;
-    position: relative;
-    width: 400px;
-    width: 400px;
-    height: 50px;
-    margin: 0;
-    padding: 0;
-    color: black;
-    color: black;
-    background-color: transparent;
-    background-color: transparent;
-    text-align: center;
-    font-family: "Oxygen",
-      sans-serif;
-    font-size: 12px;
-    font-style: italic;
-    line-height: 1.5em;
+    width: 350px;
+    height: 600px;
+    object-fit: contain;
+    top: 0px;
+    left: 5%;
   }
 
   /* Mobile Credits */
