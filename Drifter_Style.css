@@ -46,7 +46,7 @@ body {
   border: 1px solid transparent;
   border-radius: 1px;
   align-items: flex-end;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
   grid-area: hd;
   padding: 0px;
   z-index: 1;
@@ -354,22 +354,53 @@ a.otherworks {
 }
 
 /*Gallery Layouts*/
+.insanityBlockquote {
+  width: 740px;
+  height: 150px;
+  padding: 0px;
+  position: fixed;
+  margin: 0 0 0 18px;
+  left: 100px;
+  border: 5px inset rgba(255, 211, 201, 0.57);
+  transition: 2s ease-in;
+  background-color: white;
+}
+
+.insanityBlockquote:hover {
+  background-color: rgb(60, 7, 25);
+}
+.insanityBlockquote:hover p {
+  color: white;
+}
+.insanityBlockquote > p {
+  font-size: 16px;
+  width: 550px;
+  font-family: "Noto Serif TC", serif;
+  padding: 25px 0;
+  margin: auto;
+  text-align: center;
+  color: black;
+  transition: 2s ease-in;
+  font-style: italic;
+}
 .galleryStyle {
   height: 500px;
+  width: 1500px;
 }
 
 .column {
   display: flex;
   flex-flow: row nowrap;
-  margin: 50px 100px 0px 100px;
+  margin: 150px 0px 0px 100px;
 }
 
 .galleryMode {
   border: 0px;
   outline: 0px;
-  padding-right: 75px;
-  float: left;
   object-fit: contain;
+  padding-right: 75px;
+  padding-left: 0px;
+  margin-left: 0px;
   width: auto;
   height: 100%;
   z-index: -1;
@@ -667,6 +698,44 @@ a.otherworks {
   }
 
   /*Mobile Gallery Layout*/
+
+  .insanityBlockquote {
+    width: 590px;
+    height: 125px;
+    padding: 0px;
+    position: relative;
+    margin: 15px 0px;
+    left: 0px;
+    border: 5px inset rgba(255, 211, 201, 0.57);
+    transition: 2s ease-in;
+    background-color: white;
+    margin-top: -50px;
+  }
+
+  .insanityBlockquote:hover {
+    background-color: rgb(60, 7, 25);
+  }
+  .insanityBlockquote:hover p {
+    color: white;
+  }
+  .insanityBlockquote > p {
+    font-size: 14px;
+    width: 500px;
+    font-family: "Noto Serif TC", serif;
+    padding: 15px 0;
+    margin: auto;
+    text-align: center;
+    color: black;
+    transition: 2s ease-in;
+    font-style: italic;
+    line-height: 1.6em;
+  }
+  .insanityBlockquote strong {
+    font-size: 18px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+  }
+
   .galleryStyle {
     margin: auto;
     padding: 0px;
@@ -970,6 +1039,45 @@ a.otherworks {
   }
 
   /*Mobile Gallery Layout*/
+
+    .insanityBlockquote {
+      width: 340px;
+      height: 110px;
+      padding: 0px;
+      position: relative;
+      margin: 15px 0px;
+      left: 0px;
+      border: 3px inset rgba(255, 211, 201, 0.57);
+      transition: 2s ease-in;
+      background-color: white;
+      margin-top: -10px;
+    }
+
+    .insanityBlockquote:hover {
+      background-color: rgb(60, 7, 25);
+    }
+    .insanityBlockquote:hover p {
+      color: white;
+    }
+    .insanityBlockquote > p {
+      font-size: 10px;
+      width: 330px;
+      height: 200px;
+      font-family: "Noto Serif TC", serif;
+      padding: 5px 0;
+      margin: auto;
+      text-align: center;
+      color: black;
+      transition: 2s ease-in;
+      font-style: italic;
+      line-height: 2em;
+    }
+    .insanityBlockquote strong {
+      font-size: 14px;
+      word-spacing: 2px;
+      letter-spacing: 2px;
+    }
+
   .galleryStyle {
     margin: 10px 0px;
     width: 500px;
