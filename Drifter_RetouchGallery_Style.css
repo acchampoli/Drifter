@@ -199,6 +199,10 @@ a.otherworks {
   overflow-x: scroll;
   overflow-y: scroll;
   width: 1800px;
+  display: flex;
+  flex: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .retouchAlign {
@@ -212,13 +216,17 @@ a.otherworks {
   width: auto;
   object-fit: contain;
   position: relative;
-  top: 0;
-  left: 0;
+}
+
+.myRetouchSlides:nth-child(1), .myRetouchSlides:nth-child(2) {
+  width: 300px;
+  height: 500px;
+  object-fit: contain;
 }
 
 .myRetouchSlides, p {
   top: 75px;
-  left: 25%;
+  left: 0;
   font-family: "Noto Serif TC", sans-serif;
   font-size: 14px;
   position: relative;
@@ -232,12 +240,13 @@ p {
 
 #tablet+p {
   top: 75px;
-  left: 25%;
+  left: 0;
   font-family: "Noto Serif TC", sans-serif;
   font-size: 14px;
   font-style: italic;
   color: black;
   position: relative;
+  text-align: center;
 }
 
 #tablet {
