@@ -111,18 +111,20 @@ li:last-child {
   font-style: italic;
 }
 
-#blog,
-#linkedin {
+#linkedin, #blog {
   display: inline-block;
-  right: -750px;
-  width: 100px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  text-transform: lowercase;
-  font-family: "Oxygen",
-    sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-size: 22px;
+  text-transform: lowercase;
+  right: -650px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  width: 50px;
 }
+
+#linkedin {font-size: 36px;
+top: 15px;}
+
 
 .rightlinks {
   position: relative;
@@ -131,7 +133,6 @@ li:last-child {
 .rightlinks a:hover {
   color: maroon;
 }
-
 /* Nav */
 span {
   z-index: 2;
@@ -292,33 +293,37 @@ p {
   /* Banner Name and Links Section */
   .banner {
     width: 800px;
-    height: 50px;
-    margin: 0;
+    height: 35px;
     padding: 0;
+    margin: 0;
   }
 
-  .rightlinks {
-    display: none;
-  }
-
-  #blog,
   #linkedin {
-    display: none;
+    display:;
+    position: relative;
+    top: 28px;
+    right: -70px;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
   }
 
   .name a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: left;
+    line-height: 0em;
     left: 65px;
     color: white;
     background-color: transparent;
-    text-align: left;
-    font-family: "Montserrat",
-      sans-serif;
-    font-size: 22px;
-    font-weight: normal;
-    line-height: .5em;
-    letter-spacing: 2px;
   }
-
+.name a:hover {
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+}
   a {
     text-decoration: none;
   }
@@ -461,32 +466,31 @@ p {
 
   /* Banner Name and Links Section */
   .banner {
-    width: auto;
+    width: 100%;
     height: 50px;
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
 
-  .rightlinks {
-    display: none;
-  }
-
-  #blog,
   #linkedin {
-    display: none;
+    position: relative;
+    top: 30px;
+    right: 150px;
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
   }
 
   .name a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: left;
+    line-height: .5em;
     left: 65px;
     color: white;
     background-color: transparent;
-    text-align: left;
-    font-family: "Montserrat",
-      sans-serif;
-    font-size: 22px;
-    font-weight: normal;
-    line-height: .5em;
-    letter-spacing: 2px;
   }
 
   a {

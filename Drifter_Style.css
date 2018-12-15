@@ -116,11 +116,15 @@ li:last-child {
   font-family: "Oxygen", sans-serif;
   font-size: 22px;
   text-transform: lowercase;
-  right: -750px;
+  right: -650px;
   padding-left: 15px;
   padding-bottom: 10px;
-  width: 100px;
+  width: 50px;
 }
+
+#linkedin {font-size: 36px;
+top: 15px;}
+
 
 .rightlinks {
   position: relative;
@@ -375,13 +379,14 @@ a.otherworks {
 .insanityBlockquote > p {
   font-size: 16px;
   width: 550px;
-  font-family: "Noto Serif TC", serif;
+  font-family: "Oxygen", sans-serif;
   padding: 25px 0;
   margin: auto;
   text-align: center;
   color: black;
   transition: 2s ease-in;
   font-style: italic;
+  line-height: 25px;
 }
 .galleryStyle {
   height: 500px;
@@ -519,12 +524,14 @@ a.otherworks {
     margin: 0;
   }
 
-  .rightlinks {
-    display: none;
-  }
-
-  #linkedin, #blog {
-    display: none;
+  #linkedin {
+    display:;
+    position: relative;
+    top: 28px;
+    right: -70px;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
   }
 
   .name a {
@@ -721,7 +728,7 @@ a.otherworks {
   .insanityBlockquote > p {
     font-size: 14px;
     width: 500px;
-    font-family: "Noto Serif TC", serif;
+  font-family: "Oxygen", sans-serif;
     padding: 15px 0;
     margin: auto;
     text-align: center;
@@ -877,12 +884,13 @@ a.otherworks {
     margin: 0;
   }
 
-  .rightlinks {
-    display: none;
-  }
-
-  #linkedin, #blog {
-    display: none;
+  #linkedin {
+    position: relative;
+    top: 30px;
+    right: 150px;
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
   }
 
   .name a {
@@ -1063,7 +1071,7 @@ a.otherworks {
       font-size: 10px;
       width: 330px;
       height: 200px;
-      font-family: "Noto Serif TC", serif;
+  font-family: "Oxygen", sans-serif;
       padding: 5px 0;
       margin: auto;
       text-align: center;

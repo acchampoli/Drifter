@@ -1,0 +1,169 @@
+/*Drifter_UnderConstruction.css*/
+
+html {
+  width: 1800px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+
+}
+
+.underConstruction {
+  background-image: url('Cape-Landscape_WEB.jpg');
+  background-size: cover;
+  width: 1800px;
+  height: 100%;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.constructionText {
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  position: relative;
+  height: 200px;
+  width: 700px;
+  top: -50px;
+  padding: 50px 10px 50px 10px;
+  border-radius: 20px;
+      color: white;
+      background: gray ;
+      mix-blend-mode: multiply;
+}
+
+.goBackButton {
+  position: relative;
+  width: 250px;
+  height: 40px;
+  background: rgb(60, 60, 60);
+  border-radius: 20px;
+      text-align: center;
+}
+
+.goBackButton a {
+  text-decoration: none;
+  color: white;
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.8em;
+    width: 250px;
+    height: 40px;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+  .underConstruction {
+    background-image: url('Cape-Landscape_WEB.jpg');
+    background-size: cover;
+    width: 800px;
+    height: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .constructionText {
+    font-family: "Oxygen", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    height: 200px;
+    width: 600px;
+    top: -50px;
+    padding: 50px 10px 50px 10px;
+    border-radius: 20px;
+        color: white;
+        background: gray ;
+        mix-blend-mode: hard-light;
+  }
+
+  .goBackButton {
+    position: relative;
+    width: 250px;
+    height: 40px;
+    background: rgb(60, 60, 60);
+    border-radius: 20px;
+        text-align: center;
+  }
+
+  .goBackButton a {
+    text-decoration: none;
+    color: white;
+    font-family: "Oxygen", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.8em;
+      width: 250px;
+      height: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .underConstruction {
+    background-image: url('Cape-Landscape_WEB.jpg');
+    background-size: cover;
+    width: 500px;
+    height: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .constructionText {
+    font-family: "Oxygen", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    position: relative;
+    height: 100px;
+    width: 400px;
+    top: -20px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+        color: white;
+        background: gray ;
+        mix-blend-mode: hard-light;
+  }
+
+  .goBackButton {
+    position: relative;
+    width: 250px;
+    height: 40px;
+    background: rgb(60, 60, 60);
+    border-radius: 20px;
+        text-align: center;
+  }
+
+  .goBackButton a {
+    text-decoration: none;
+    color: white;
+    font-family: "Oxygen", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.8em;
+      width: 250px;
+      height: 40px;
+  }
+}
